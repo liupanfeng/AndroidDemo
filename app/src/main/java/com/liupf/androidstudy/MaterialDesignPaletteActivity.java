@@ -37,6 +37,7 @@ public class MaterialDesignPaletteActivity extends AppCompatActivity {
         final TextView tv5 = (TextView)findViewById(R.id.tv5);
         final TextView tv6 = (TextView)findViewById(R.id.tv6);
 
+        //haha
 
         BitmapDrawable drawable= (BitmapDrawable) iv.getDrawable();
         Bitmap bitmap=drawable.getBitmap();
