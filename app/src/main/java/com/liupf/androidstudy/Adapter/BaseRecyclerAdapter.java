@@ -12,6 +12,7 @@ import com.liupf.androidstudy.AttributeAnimationActivity;
 import com.liupf.androidstudy.FloatWindowActivity;
 import com.liupf.androidstudy.MaterialDesignPaletteActivity;
 import com.liupf.androidstudy.R;
+import com.liupf.androidstudy.TranslucentScrollToolbarActivity;
 import com.liupf.androidstudy.bean.BaseInfo;
 import com.liupf.androidstudy.bean.ContentInfo;
 import com.liupf.androidstudy.viewholder.BaseViewHolder;
@@ -101,6 +102,9 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
                     break;
                 case "MaterialDesign动画-palette":
                     MaterialDesignPaletteActivity.actionMaterialDesignPaletteActivity(mContext);
+                    break;
+                case "透明度变化的toolbar":
+                    TranslucentScrollToolbarActivity.actionTranslucentScrollToolbarActivity(mContext);
                     break;
             }
         }

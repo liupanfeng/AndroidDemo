@@ -60,6 +60,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         infos.add(info);
         info=new ContentInfo("MaterialDesign动画-palette");
         infos.add(info);
+        info=new ContentInfo("透明度变化的toolbar");
+        infos.add(info);
     }
 
     @Override

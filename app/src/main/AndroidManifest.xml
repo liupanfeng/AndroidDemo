@@ -32,7 +32,9 @@
             android:exported="true" />
 
         <activity android:name=".AttributeAnimationActivity" />
-        <activity android:name=".MaterialDesignPaletteActivity"></activity>
+        <activity android:name=".MaterialDesignPaletteActivity" />
+        <activity android:name=".TranslucentScrollToolbarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

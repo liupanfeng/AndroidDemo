@@ -3,8 +3,8 @@ package com.liupf.androidstudy;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.graphics.Palette;
@@ -12,6 +12,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.InputStream;
+
+/**
+ * 通过palette 获取颜色值得demo
+ */
 public class MaterialDesignPaletteActivity extends AppCompatActivity {
 
 
@@ -39,8 +44,11 @@ public class MaterialDesignPaletteActivity extends AppCompatActivity {
 
         //haha
 
-        BitmapDrawable drawable= (BitmapDrawable) iv.getDrawable();
-        Bitmap bitmap=drawable.getBitmap();
+//        BitmapDrawable drawable= (BitmapDrawable) iv.getDrawable();
+//        Bitmap bitmap=drawable.getBitmap();
+
+        InputStream is = getResources().openRawResource(R.drawable.hehe);
+        Bitmap bitmap = BitmapFactory.decodeStream(is);
         //得到bitmap里面的的一些色彩信息---通过Palette类分析出来的
         //		Palette palette = Palette.generate(bitmap);
         //异步任务---可能分析的图片会比较大或者颜色分布比较复杂，会耗时比较久，防止卡死主线程。
