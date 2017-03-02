@@ -1,4 +1,4 @@
-package com.liupf.androidstudy;
+package com.liupf.androidstudy.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.liupf.androidstudy.R;
 import com.liupf.androidstudy.service.FloatWindowService;
 
 public class FloatWindowActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.liupf.androidstudy;
+package com.liupf.androidstudy.ui;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import com.liupf.androidstudy.Adapter.BaseRecyclerAdapter;
 import com.liupf.androidstudy.Adapter.MajorRecyclerAdapter;
+import com.liupf.androidstudy.R;
 import com.liupf.androidstudy.animation.AnimationUtil;
 import com.liupf.androidstudy.bean.BaseInfo;
 import com.liupf.androidstudy.bean.ContentInfo;
@@ -61,6 +62,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         info=new ContentInfo("MaterialDesign动画-palette");
         infos.add(info);
         info=new ContentInfo("透明度变化的toolbar");
+        infos.add(info);
+        info=new ContentInfo("TabLayout的简单使用");
         infos.add(info);
     }
 

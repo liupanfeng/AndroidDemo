@@ -1,4 +1,4 @@
-package com.liupf.androidstudy;
+package com.liupf.androidstudy.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.support.v7.graphics.Palette;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.liupf.androidstudy.R;
 
 import java.io.InputStream;
 

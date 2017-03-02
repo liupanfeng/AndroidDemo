@@ -8,16 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.liupf.androidstudy.AttributeAnimationActivity;
-import com.liupf.androidstudy.FloatWindowActivity;
-import com.liupf.androidstudy.MaterialDesignPaletteActivity;
+import com.liupf.androidstudy.ui.AttributeAnimationActivity;
+import com.liupf.androidstudy.ui.FloatWindowActivity;
+import com.liupf.androidstudy.ui.MaterialDesignPaletteActivity;
 import com.liupf.androidstudy.R;
-import com.liupf.androidstudy.TranslucentScrollToolbarActivity;
+import com.liupf.androidstudy.ui.TabLayoutActivity;
+import com.liupf.androidstudy.ui.TranslucentScrollToolbarActivity;
 import com.liupf.androidstudy.bean.BaseInfo;
 import com.liupf.androidstudy.bean.ContentInfo;
 import com.liupf.androidstudy.viewholder.BaseViewHolder;
 import com.liupf.androidstudy.viewholder.ContentHolder;
-import com.liupf.androidstudy.KeyBoardActivity;
+import com.liupf.androidstudy.ui.KeyBoardActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -105,6 +106,9 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
                     break;
                 case "透明度变化的toolbar":
                     TranslucentScrollToolbarActivity.actionTranslucentScrollToolbarActivity(mContext);
+                    break;
+                case "TabLayout的简单使用":
+                    TabLayoutActivity.actionTabLayoutActivity(mContext);
                     break;
             }
         }

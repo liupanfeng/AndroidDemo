@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
 
-import com.liupf.androidstudy.BaseActivity;
+import com.liupf.androidstudy.ui.BaseActivity;
 import com.liupf.androidstudy.manager.MFragmentManager;
 
 /**

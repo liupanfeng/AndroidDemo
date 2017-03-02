@@ -1,4 +1,4 @@
-package com.liupf.androidstudy;
+package com.liupf.androidstudy.ui;
 
 import android.support.v7.app.AppCompatActivity;
 

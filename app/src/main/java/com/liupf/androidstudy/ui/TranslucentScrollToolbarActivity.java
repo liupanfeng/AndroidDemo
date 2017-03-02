@@ -1,4 +1,4 @@
-package com.liupf.androidstudy;
+package com.liupf.androidstudy.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+import com.liupf.androidstudy.R;
 import com.liupf.androidstudy.listener.TranslucentListener;
 import com.liupf.androidstudy.view.MyScrollView;
 
