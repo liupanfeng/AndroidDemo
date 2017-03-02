@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_key_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/call_background"
+   >
+
+    <!-- 数字键盘区，已废弃不用 -->
+    <include
+        android:id="@+id/call_panel_keypad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/end_keypad_margin_bottom"
+        layout="@layout/layout_call_panel_keypad"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#33ffffff"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+    <!-- 操作区第一排按键，仅音频使用，包括视频通话、消息、传输文件按钮 -->
+    <include
+        android:id="@+id/call_panel_hide_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/include_inter_new_margin_bottom"
+        layout="@layout/layout_hide_call_panel_button" />
+
+    </LinearLayout>
+</RelativeLayout>

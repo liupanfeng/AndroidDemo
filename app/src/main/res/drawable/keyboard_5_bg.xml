@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_enabled="true" android:state_pressed="true">
+        <bitmap
+            android:src="@drawable/call_voicecalls_num_5_pressed"
+            android:tileMode="disabled"
+            android:gravity="center"/>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <bitmap
+            android:src="@drawable/call_voicecalls_num_5_normal"
+            android:tileMode="disabled"
+            android:gravity="center"/>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_keyboard_1"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_1_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="1" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_4"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_4_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="4" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_7"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_7_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="7" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_star"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_star_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/other_rank_margin_left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_keyboard_2"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_2_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="2" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_5"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_5_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="5" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_8"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_8_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="8" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_0"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_0_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/other_rank_margin_left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_keyboard_3"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_3_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="3" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_6"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_6_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="6" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_9"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_9_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="9" />
+
+        <TextView
+            android:id="@+id/tv_keyboard_hashkey"
+            style="@style/keyboard_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_row_space"
+            android:background="@drawable/keyboard_hashkey_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onDtmf"
+            android:tag="#" />
+    </LinearLayout>
+
+</LinearLayout>

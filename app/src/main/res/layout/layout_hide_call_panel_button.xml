@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <com.liupf.androidstudy.view.CallPanelButton
+        android:id="@+id/call_pause"
+        android:layout_width="@dimen/operation_click_bg_radius"
+        android:layout_height="@dimen/operation_click_bg_radius_big"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onPauseCall"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/call_image_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/operation_inter_between"
+            android:contentDescription="@string/pause_call"
+            android:src="@drawable/call_pause_selector" />
+
+        <TextView
+            android:id="@+id/call_text_puase"
+            style="@style/operation_in_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_image_pause"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pause_call"
+            android:textColor="@drawable/call_panel_text_selector" />
+    </com.liupf.androidstudy.view.CallPanelButton>
+
+    <com.liupf.androidstudy.view.CallPanelButton
+        android:id="@+id/call_video"
+        android:layout_width="@dimen/operation_click_bg_radius"
+        android:layout_height="@dimen/operation_click_bg_radius_big"
+        android:layout_weight="0"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:onClick="onVideoCall" >
+
+        <ImageView
+            android:id="@+id/call_image_vodeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/operation_inter_between"
+            android:contentDescription="@string/video_call"
+            android:src="@drawable/call_video_selector" />
+
+        <TextView
+            style="@style/operation_in_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_image_vodeo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/video_call"
+            android:textColor="@drawable/call_panel_text_selector" />
+    </com.liupf.androidstudy.view.CallPanelButton>
+
+    <com.liupf.androidstudy.view.CallPanelButton
+        android:id="@+id/call_im"
+        android:layout_width="@dimen/operation_click_bg_radius"
+        android:layout_height="@dimen/operation_click_bg_radius_big"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onIm" >
+
+        <ImageView
+            android:id="@+id/call_image_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/operation_inter_between"
+            android:contentDescription="@string/im"
+            android:src="@drawable/call_message_selector" />
+
+        <TextView
+            android:id="@+id/voice_call_msg_unread_text"
+            style="@style/msg_top_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toRightOf="@id/call_image_im"
+            android:layout_alignTop="@id/call_image_im"
+            android:background="@mipmap/message_tag_messageamount_bg"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/call_image_im_lable"
+            style="@style/operation_in_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_image_im"
+            android:layout_centerHorizontal="true"
+            android:text="@string/im"
+            android:textColor="@drawable/call_panel_text_selector" />
+    </com.liupf.androidstudy.view.CallPanelButton>
+
+    <com.liupf.androidstudy.view.CallPanelButton
+        android:id="@+id/call_theme"
+        android:layout_width="@dimen/operation_click_bg_radius"
+        android:layout_height="@dimen/operation_click_bg_radius_big"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onTheme"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/call_image_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/operation_inter_between"
+            android:contentDescription="@string/theme"
+            android:src="@drawable/call_theme_selector" />
+
+        <ImageView
+            android:id="@+id/img_new_theme_icon"
+            style="@style/msg_top_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toRightOf="@id/call_image_theme"
+            android:layout_alignTop="@id/call_image_theme"
+            android:background="@mipmap/new_icon"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/call_image_theme_lable"
+            style="@style/operation_in_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_image_theme"
+            android:layout_centerHorizontal="true"
+            android:text="@string/theme"
+            android:textColor="@drawable/call_panel_text_selector" />
+    </com.liupf.androidstudy.view.CallPanelButton>
+
+    <com.liupf.androidstudy.view.CallPanelButton
+        android:id="@+id/call_file"
+        android:layout_width="@dimen/operation_click_bg_radius"
+        android:layout_height="@dimen/operation_click_bg_radius_big"
+        android:layout_weight="0"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onSendFile" >
+
+        <ImageView
+            android:id="@+id/call_image_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/operation_inter_between"
+            android:contentDescription="@string/file_transfer"
+            android:src="@drawable/call_files_selector" />
+
+        <TextView
+            style="@style/operation_in_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_image_file"
+            android:layout_centerHorizontal="true"
+            android:text="@string/file_transfer"
+            android:textColor="@drawable/call_panel_text_selector" />
+    </com.liupf.androidstudy.view.CallPanelButton>
+
+</LinearLayout>

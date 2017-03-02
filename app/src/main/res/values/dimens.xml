@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="include_inter_new_margin_bottom">11dp</dimen>
+
+    <!-- 多次公用 -->
+    <dimen name="operation_inter_between">7dp</dimen>
+    <dimen name="operation_click_bg_radius">75dp</dimen>
+    <dimen name="operation_click_bg_radius_big">100dp</dimen>
+    <dimen name="keyboard_click_bg_radius">50dp</dimen>
+
+
+    <dimen name="end_keypad_margin_bottom">40dp</dimen>
+    <dimen name="key_row_space">8dp</dimen>
+    <dimen name="other_rank_margin_left">65dp</dimen>
+
+</resources>
