@@ -4,6 +4,9 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
@@ -14,6 +17,7 @@ import com.liupf.androidstudy.animation.AnimationUtil;
 import com.liupf.androidstudy.bean.BaseInfo;
 import com.liupf.androidstudy.bean.ContentInfo;
 import com.liupf.androidstudy.recycler.ItemDivideDecoration;
+import com.liupf.androidstudy.util.URLUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +32,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private ImageView iv;
     private int type;
+
+    private WebView wv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +47,20 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
        /* infos.add(info);
         info=new ContentInfo("解析html");*/
 
+
+        wv=(WebView)findViewById(R.id.wv);
+        String url=URLUtils.urlEncoded("https://www.baidu.com/");
+        wv.loadUrl(url);
+
+        WebSettings wSet = wv.getSettings();
+        wSet.setJavaScriptEnabled(true);
+        wv.setWebViewClient(new WebViewClient() {
+            public boolean shouldOverrideUrlLoading(WebView view, String url)
+            { //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边
+                view.loadUrl(url);
+                return true;
+            }
+        });
         mRecyclerView=(RecyclerView)findViewById(R.id.recyclerView);
         adapter=new MajorRecyclerAdapter(this,mRecyclerView);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());

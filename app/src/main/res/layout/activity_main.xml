@@ -19,10 +19,15 @@
       android:visibility="gone"
       android:background="@drawable/call_dial_selector"
       />
+  <WebView
+      android:id="@+id/wv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"></WebView>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_below="@+id/iv"
+        android:layout_below="@+id/wv"
         android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

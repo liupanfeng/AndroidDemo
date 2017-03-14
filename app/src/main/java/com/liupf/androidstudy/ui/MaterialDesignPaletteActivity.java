@@ -30,6 +30,7 @@ public class MaterialDesignPaletteActivity extends AppCompatActivity {
     private ImageView iv;
     private TextView tv_title;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
