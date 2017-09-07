@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.liupf.androidstudy.login.LoginActivity;
 import com.liupf.androidstudy.ui.AttributeAnimationActivity;
 import com.liupf.androidstudy.ui.FloatWindowActivity;
 import com.liupf.androidstudy.ui.MaterialDesignPaletteActivity;
@@ -109,6 +110,9 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
                     break;
                 case "TabLayout的简单使用":
                     TabLayoutActivity.actionTabLayoutActivity(mContext);
+                    break;
+                case "MVP_LOGIN":
+                    LoginActivity.actionLoginActivity(mContext);
                     break;
             }
         }

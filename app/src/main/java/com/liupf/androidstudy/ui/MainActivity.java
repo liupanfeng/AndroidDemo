@@ -4,11 +4,10 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.liupf.androidstudy.Adapter.BaseRecyclerAdapter;
 import com.liupf.androidstudy.Adapter.MajorRecyclerAdapter;
@@ -17,7 +16,6 @@ import com.liupf.androidstudy.animation.AnimationUtil;
 import com.liupf.androidstudy.bean.BaseInfo;
 import com.liupf.androidstudy.bean.ContentInfo;
 import com.liupf.androidstudy.recycler.ItemDivideDecoration;
-import com.liupf.androidstudy.util.URLUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,24 +41,26 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         iv=(ImageView)findViewById(R.id.iv);
         iv.setOnClickListener(this);
         iv.setSelected(true);
+        info=new ContentInfo("解析html");
+        infos.add(info);
         addInfos();
-       /* infos.add(info);
-        info=new ContentInfo("解析html");*/
+        int a=123;
+        int b=123/10;
+        Toast.makeText(this, "b----"+b, Toast.LENGTH_SHORT).show();
 
-
-        wv=(WebView)findViewById(R.id.wv);
-        String url=URLUtils.urlEncoded("https://www.baidu.com/");
-        wv.loadUrl(url);
-
-        WebSettings wSet = wv.getSettings();
-        wSet.setJavaScriptEnabled(true);
-        wv.setWebViewClient(new WebViewClient() {
-            public boolean shouldOverrideUrlLoading(WebView view, String url)
-            { //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边
-                view.loadUrl(url);
-                return true;
-            }
-        });
+//        wv=(WebView)findViewById(R.id.wv);
+//        String url=URLUtils.urlEncoded("https://www.baidu.com/");
+//        wv.loadUrl(url);
+//
+//        WebSettings wSet = wv.getSettings();
+//        wSet.setJavaScriptEnabled(true);
+//        wv.setWebViewClient(new WebViewClient() {
+//            public boolean shouldOverrideUrlLoading(WebView view, String url)
+//            { //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边
+//                view.loadUrl(url);
+//                return true;
+//            }
+//        });
         mRecyclerView=(RecyclerView)findViewById(R.id.recyclerView);
         adapter=new MajorRecyclerAdapter(this,mRecyclerView);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -68,8 +68,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         mRecyclerView.addItemDecoration(new ItemDivideDecoration(AnimationUtil.dip2px(MainActivity.this,2), adapter));
         adapter.addAll(infos);
-
-
     }
 
     private void addInfos() {
@@ -84,6 +82,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         info=new ContentInfo("透明度变化的toolbar");
         infos.add(info);
         info=new ContentInfo("TabLayout的简单使用");
+        infos.add(info);
+        info=new ContentInfo("TabLayout的简单使用");
+        infos.add(info);
+        info=new ContentInfo("MVP_LOGIN");
         infos.add(info);
     }
 
