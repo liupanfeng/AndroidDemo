@@ -30,12 +30,12 @@ public class TabLayoutActivity extends AppCompatActivity {
             "新闻",
             "娱乐",
             "体育",
-            "科技",
+           /* "科技",
             "美女",
             "财经",
             "汽车",
             "房子",
-            "头条"
+            "头条"*/
     };
 
     @Override

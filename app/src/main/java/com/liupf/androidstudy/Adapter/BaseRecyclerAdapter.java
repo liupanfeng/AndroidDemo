@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.liupf.androidstudy.login.LoginActivity;
 import com.liupf.androidstudy.ui.AttributeAnimationActivity;
 import com.liupf.androidstudy.ui.FloatWindowActivity;
 import com.liupf.androidstudy.ui.MaterialDesignPaletteActivity;
@@ -17,6 +16,7 @@ import com.liupf.androidstudy.ui.TabLayoutActivity;
 import com.liupf.androidstudy.ui.TranslucentScrollToolbarActivity;
 import com.liupf.androidstudy.bean.BaseInfo;
 import com.liupf.androidstudy.bean.ContentInfo;
+import com.liupf.androidstudy.util.Contants;
 import com.liupf.androidstudy.viewholder.BaseViewHolder;
 import com.liupf.androidstudy.viewholder.ContentHolder;
 import com.liupf.androidstudy.ui.KeyBoardActivity;
@@ -112,7 +112,10 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
                     TabLayoutActivity.actionTabLayoutActivity(mContext);
                     break;
                 case "MVP_LOGIN":
-                    LoginActivity.actionLoginActivity(mContext);
+//                    LoginActivity.actionLoginActivity(mContext);
+                    break;
+                case Contants.NEW_FEATURES:
+
                     break;
             }
         }
