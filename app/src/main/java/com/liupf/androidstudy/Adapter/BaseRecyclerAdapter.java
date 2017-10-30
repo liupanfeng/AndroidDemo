@@ -12,6 +12,7 @@ import com.liupf.androidstudy.ui.AttributeAnimationActivity;
 import com.liupf.androidstudy.ui.FloatWindowActivity;
 import com.liupf.androidstudy.ui.MaterialDesignPaletteActivity;
 import com.liupf.androidstudy.R;
+import com.liupf.androidstudy.ui.NewFeaturesActivity;
 import com.liupf.androidstudy.ui.TabLayoutActivity;
 import com.liupf.androidstudy.ui.TranslucentScrollToolbarActivity;
 import com.liupf.androidstudy.bean.BaseInfo;
@@ -86,7 +87,6 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
     @Override
     public void onClick(View v) {
         onItemClick(v);
-        mContext.getString(R.string.app_name);
     }
 
     private void onItemClick(View v) {
@@ -115,7 +115,7 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
 //                    LoginActivity.actionLoginActivity(mContext);
                     break;
                 case Contants.NEW_FEATURES:
-
+                    NewFeaturesActivity.actionNewFeaturesActivity(mContext);
                     break;
             }
         }

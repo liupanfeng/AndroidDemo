@@ -81,4 +81,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 //            iv.setEnabled(true);
 //        }
     }
+
+    public int[] twoSum(int[] nums, int target) {
+        int[] arr={};
+        for(int i=0;i<nums.length-1;i++){
+            for(int j=0;i<nums.length-1;j++){
+                if(nums[i]+nums[j]==target){
+                    arr[0]=nums[i];
+                    arr[1]=nums[j];
+                    return arr;
+                }
+            }
+        }
+        return arr;
+    }
 }

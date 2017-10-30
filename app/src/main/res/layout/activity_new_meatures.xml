@@ -1,9 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.liupf.androidstudy.ui.NewFeaturesActivity">
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        toolbar:titleTextColor="#ffffff"
+        toolbar:subtitleTextColor="#ffffff"
+        android:layout_height="wrap_content">
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="5.0新特性"
+            android:textSize="20sp"/>-->
+    </android.support.v7.widget.Toolbar>
 
-</android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/content_introduce"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NavigationView"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toolbar"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tabLayout"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_Floating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FloatingActionButton"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_snackBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="snackBar"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CardView"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

@@ -41,7 +41,9 @@
             android:name=".ui.TabLayoutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".login.LoginActivity" />
-        <activity android:name=".ui.NewFeaturesActivity"></activity>
+        <activity
+            android:name=".ui.NewFeaturesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

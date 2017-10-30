@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidDemo</string>
+    <string name="app_name">Sundy</string>
 
 
     <string name="end_call">结束</string>
@@ -10,5 +10,6 @@
 
     <string name="theme">主题表情</string>
     <string name="file_transfer">文件传输</string>
+    <string name="content_introduce">内容介绍</string>
 
 </resources>
