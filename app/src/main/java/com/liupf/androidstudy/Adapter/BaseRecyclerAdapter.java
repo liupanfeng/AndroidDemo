@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.liupf.androidstudy.ui.AttributeAnimationActivity;
+import com.liupf.androidstudy.ui.ExpandableListViewActivity;
 import com.liupf.androidstudy.ui.FloatWindowActivity;
 import com.liupf.androidstudy.ui.MaterialDesignPaletteActivity;
 import com.liupf.androidstudy.R;
@@ -116,6 +117,9 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
                     break;
                 case Contants.NEW_FEATURES:
                     NewFeaturesActivity.actionNewFeaturesActivity(mContext);
+                    break;
+                case Contants.EXPANDABLE_LISTVIEW:
+                    ExpandableListViewActivity.actionExpandableListViewActivity(mContext);
                     break;
             }
         }

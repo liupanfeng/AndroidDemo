@@ -43,7 +43,8 @@
         <activity android:name=".login.LoginActivity" />
         <activity
             android:name=".ui.NewFeaturesActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.ExpandableListViewActivity"></activity>
     </application>
 
 </manifest>
