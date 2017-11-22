@@ -15,12 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="属性动画"/>
-    <ImageView
-        android:id="@+id/iv_girl"
-        android:layout_below="@+id/btn"
-        android:layout_marginTop="20dp"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/pic"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:textSize="22sp"
+        android:text="Property Animation"/>
 
 </RelativeLayout>
