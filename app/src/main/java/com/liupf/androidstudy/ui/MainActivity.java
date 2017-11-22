@@ -7,6 +7,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.liupf.androidstudy.Adapter.BaseRecyclerAdapter;
 import com.liupf.androidstudy.Adapter.MajorRecyclerAdapter;
@@ -50,6 +51,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         mRecyclerView.addItemDecoration(new ItemDivideDecoration(AnimationUtil.dip2px(MainActivity.this,2), adapter));
         adapter.addAll(infos);
+
+
     }
 
     private void addInfos() {
