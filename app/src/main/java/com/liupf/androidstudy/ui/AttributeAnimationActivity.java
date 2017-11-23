@@ -100,9 +100,13 @@ public class AttributeAnimationActivity extends AppCompatActivity implements Vie
 ////        });
 //        animatorSet.start();
 
-        Animator animator= AnimatorInflater.loadAnimator(this,R.animator.sundy);
-        animator.setTarget(tv_content);
-        animator.start();
+//        Animator animator= AnimatorInflater.loadAnimator(this,R.animator.sundy);
+//        animator.setTarget(tv_content);
+//        animator.start();
+
+        //以上演示的均是属性动画的基础用法，下面学习TypeEvaluator,这个类告诉动画系统如何从初始值到结束值的
+        //ValueAnimator.ofFloat()方法是实现了初始值和结束值之间的平滑过度，那么这个平滑过度是怎么做到的？
+        //其实是系统内置了一个FloatEvaluator
 
     }
 }

@@ -8,4 +8,7 @@ public class Contants {
     public static final String NEW_FEATURES ="5.0新特性";
 
     public static final String EXPANDABLE_LISTVIEW ="expandableListView";
+
+    public static final String ATTRIBUTE_ANIMATION ="属性动画";
+
 }

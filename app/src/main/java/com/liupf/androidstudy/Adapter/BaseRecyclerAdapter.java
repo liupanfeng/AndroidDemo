@@ -100,9 +100,6 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
                 case "使用WindowManager实现悬浮窗":
                     FloatWindowActivity.actionFloatWindowActivity(mContext);
                     break;
-                case "属性动画":
-                    AttributeAnimationActivity.actionAttributeAnimationActivity(mContext);
-                    break;
                 case "MaterialDesign动画-palette":
                     MaterialDesignPaletteActivity.actionMaterialDesignPaletteActivity(mContext);
                     break;
@@ -120,6 +117,10 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
                     break;
                 case Contants.EXPANDABLE_LISTVIEW:
                     ExpandableListViewActivity.actionExpandableListViewActivity(mContext);
+                    break;
+
+                case Contants.ATTRIBUTE_ANIMATION:
+                    AttributeAnimationActivity.actionAttributeAnimationActivity(mContext);
                     break;
             }
         }

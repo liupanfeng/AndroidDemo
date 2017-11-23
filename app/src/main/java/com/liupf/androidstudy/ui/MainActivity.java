@@ -75,6 +75,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         info=new ContentInfo(Contants.EXPANDABLE_LISTVIEW);
         infos.add(info);
+
+        info=new ContentInfo(Contants.ATTRIBUTE_ANIMATION);
+        infos.add(info);
     }
 
     @Override
