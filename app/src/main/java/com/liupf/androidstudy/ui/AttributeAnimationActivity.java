@@ -16,6 +16,17 @@ import android.widget.TextView;
 
 import com.liupf.androidstudy.R;
 
+/**
+ *
+ * lpf
+ * 属性动画
+ * 属性动画最核心的类是ValueAnimator这个类，以及继承它的ObjectAnimator
+ * 如果需要动画组合起来，需要用到AnimatorSet调用play（）这个方法
+ * 可以添加监听  addListener addUpdateListener   onAnimatorLister  onAnimatorListenerAdapter
+ * 如果使用xml的方式进行属性的动画的编写，需要在res路径下创建一个animator文件夹 animator 对应java代码中的ValueAnimator   objectAnimator 对应Java代码中的ObjectAnimator
+ * set对应AnimatorSet
+ *
+ */
 public class AttributeAnimationActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn;
@@ -100,6 +111,7 @@ public class AttributeAnimationActivity extends AppCompatActivity implements Vie
 ////        });
 //        animatorSet.start();
 
+//        //*****************************通过xml方式添加属性动画***************************
 //        Animator animator= AnimatorInflater.loadAnimator(this,R.animator.sundy);
 //        animator.setTarget(tv_content);
 //        animator.start();
@@ -107,6 +119,8 @@ public class AttributeAnimationActivity extends AppCompatActivity implements Vie
         //以上演示的均是属性动画的基础用法，下面学习TypeEvaluator,这个类告诉动画系统如何从初始值到结束值的
         //ValueAnimator.ofFloat()方法是实现了初始值和结束值之间的平滑过度，那么这个平滑过度是怎么做到的？
         //其实是系统内置了一个FloatEvaluator
+
+
 
     }
 }
