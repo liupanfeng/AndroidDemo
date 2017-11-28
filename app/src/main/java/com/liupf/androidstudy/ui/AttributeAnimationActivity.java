@@ -5,6 +5,7 @@ import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,8 +14,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.liupf.androidstudy.R;
+import com.liupf.androidstudy.view.MyAnimView;
+import com.liupf.androidstudy.view.Point;
+import com.liupf.androidstudy.view.PointEvaluator;
 
 /**
  *
@@ -31,6 +36,7 @@ public class AttributeAnimationActivity extends AppCompatActivity implements Vie
 
     private Button btn;
     private TextView tv_content;
+    private MyAnimView mav;
     int type=0;
     public static void actionAttributeAnimationActivity(Context context){
         Intent intent=new Intent(context,AttributeAnimationActivity.class);
@@ -44,6 +50,8 @@ public class AttributeAnimationActivity extends AppCompatActivity implements Vie
         btn=(Button)findViewById(R.id.btn);
         btn.setOnClickListener(this);
         tv_content=(TextView) findViewById(R.id.tv_content);
+        mav=(MyAnimView)findViewById(R.id.mav);
+        mav.setOnClickListener(this);
     }
 
     @Override
@@ -120,7 +128,13 @@ public class AttributeAnimationActivity extends AppCompatActivity implements Vie
         //ValueAnimator.ofFloat()方法是实现了初始值和结束值之间的平滑过度，那么这个平滑过度是怎么做到的？
         //其实是系统内置了一个FloatEvaluator
 
+//        Point point1 = new Point(0, 0);
+//        Point point2 = new Point(300, 300);
+//        ValueAnimator anim = ValueAnimator.ofObject(new PointEvaluator(), point1, point2);
+//        anim.setDuration(5000);
+//        anim.start();
 
+          mav.startAnimator(true);
 
     }
 }
