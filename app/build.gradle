@@ -20,7 +20,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file "./newsreader.keystore"
+            storeFile file "D:/android_workspace/AndroidDemo/newsreader.keystore"
             storePassword "3gnetease"
             keyAlias "newsreader.keystore"
             keyPassword "3gnetease"
