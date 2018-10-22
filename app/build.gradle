@@ -15,12 +15,12 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    
+
     signingConfigs {
         config {
             keyAlias 'netease_lpf.keystore'
             keyPassword '52952700'
-            storeFile file('C:/Users/liupanfeng/netease_lpf.keystore')
+            storeFile file('C:/Users/liupanfeng/netease_lpf.jks')
             storePassword '52952700'
         }
     }
