@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'netease_lpf.keystore'
+            keyPassword '52952700'
+            storeFile file('C:/Users/liupanfeng/netease_lpf.jks')
+            storePassword '52952700'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
     aaptOptions {
@@ -14,16 +22,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
 
-    signingConfigs {
-        config {
-            keyAlias 'netease_lpf.keystore'
-            keyPassword '52952700'
-            storeFile file('C:/Users/liupanfeng/netease_lpf.jks')
-            storePassword '52952700'
-        }
-    }
+
 
     buildTypes {
         release {
@@ -34,6 +36,8 @@ android {
         debug {
             signingConfig signingConfigs.config
         }
+    }
+    productFlavors {
     }
 }
 
