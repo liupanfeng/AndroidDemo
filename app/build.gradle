@@ -4,6 +4,9 @@ apply plugin: 'com.android.application'
 apply plugin: 'jacoco'
 
 android {
+    lintOptions{
+        abortOnError false
+    }
     signingConfigs {
         config {
             keyAlias 'netease_lpf.keystore'
