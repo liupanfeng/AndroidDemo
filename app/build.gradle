@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+//代码覆盖率插件
+apply plugin: 'jacoco'
+
 android {
     signingConfigs {
         config {
@@ -32,14 +35,49 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
+            testCoverageEnabled true
         }
         debug {
             signingConfig signingConfigs.config
+            testCoverageEnabled true
         }
     }
+
+    jacoco{
+        version "0.7.4.201502262128"
+    }
+
     productFlavors {
     }
 }
+
+
+//jacocoTestReport依赖于connectedAndroidTest task，所以在执行jacoco之前需要先执行connectedAndroidTest，也就是说需要连接测试机（模拟器or真机）
+task jacocoTestReport(type:JacocoReport,dependsOn:"connectedAndroidTest"){
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    reports{
+        xml.enabled = false
+        html.enabled = true
+        csv.enabled = false
+    }
+    classDirectories = fileTree(
+            dir : "$buildDir/intermediates/classes/debug",
+            excludes : [
+                    '**/*Test.class',
+                    '**/R.class',
+                    '**/R$*.class',
+                    '**/BuildConfig.*',
+                    '**/Manifest*.*'
+            ]
+    )
+    def coverageSourceDirs = ['src/main/java']
+    additionalSourceDirs = files(coverageSourceDirs)
+    sourceDirectories = files(coverageSourceDirs)
+    additionalClassDirs = files(coverageSourceDirs)
+    executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
+}
+
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
