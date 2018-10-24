@@ -74,12 +74,15 @@ task jacocoTestReport(type:JacocoReport,dependsOn:"connectedAndroidTest"){
                     '**/Manifest*.*'
             ]
     )
-    def coverageSourceDirs = ['src/main/java']
+    def coverageSourceDirs = ['./src/main/java']
     additionalSourceDirs = files(coverageSourceDirs)
     sourceDirectories = files(coverageSourceDirs)
     additionalClassDirs = files(coverageSourceDirs)
     executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
 }
+
+
+
 
 
 dependencies {
