@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
-//代码覆盖率插件
-apply plugin: 'jacoco'
+////代码覆盖率插件
+//apply plugin: 'jacoco'
 
 android {
     lintOptions{
