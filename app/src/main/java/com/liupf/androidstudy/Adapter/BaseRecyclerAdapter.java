@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,7 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
     protected RecyclerView mRecyclerView;
     protected List<BaseInfo> mList;
     protected MyHandler mHandler;
+    private String name="lpf";
 
     public BaseRecyclerAdapter(Context context, RecyclerView recyclerView) {
         mContext = context;
@@ -52,6 +54,7 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
         View itemView;
         itemView=mLayoutInflater.inflate(R.layout.layout_item_main,parent,false);
         holder=new ContentHolder(itemView);
+        name="weiwei";
         return holder;
     }
 
@@ -64,6 +67,7 @@ public abstract class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseViewH
     @Override
     public void onBindViewHolder(BaseViewHolder holder, int position) {
         holder.setIsRecyclable(true);
+        Log.d("--",name);
         holder.bindViewHolder(mContext, getItem(position), this);
     }
 
